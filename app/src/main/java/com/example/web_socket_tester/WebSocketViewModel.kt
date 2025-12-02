@@ -40,6 +40,7 @@ class WebSocketViewModel : ViewModel() {
             val options = IO.Options()
             options.reconnection = true
             options.forceNew = true
+            options.query = "type=android"
 
             socket = IO.socket(_url.value, options)
 
